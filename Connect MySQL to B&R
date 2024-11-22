@@ -1,0 +1,12 @@
+-- Créer la base de données
+CREATE DATABASE mybase;
+
+-- Utiliser la base de données
+USE mybase;
+
+-- Créer la table 'matable'
+CREATE TABLE matable (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nom VARCHAR(255),
+    age INT
+);
