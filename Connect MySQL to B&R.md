@@ -1,18 +1,24 @@
 # README BDD
 
-## Créer la base de données
+## Requêtes SQL pour mettre en place la base de donnée
 
-Créer la base de données :
+1. Créer la base de données :
 
 ```bash
-CREATE DATABASE mybase;
+CREATE SCHEMA `new_schema` ;
+```
 
+2. Créer une table à l'intérieur de la base
 
-Utiliser la base de données : 
 ```bash
-USE mybase;
+CREATE TABLE `my_data`.`new_table` (
+  `idnew_table` INT NULL);
+```
 
--- Créer la table 'matable'
-CREATE TABLE matable (
-    id INT AUTO_INCREMENT PRIMARY KEY,
-   );
+3. Supprimer une table :
+
+```bash
+DROP TABLE `my_data`.`new_table` ;
+```
+
+Cette commande supprime la table `new_table` de la base de données `my_data`. Assurez-vous de bien vouloir supprimer la table, car cette action est irréversible.
