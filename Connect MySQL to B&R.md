@@ -5,20 +5,20 @@
 1. Créer la base de données :
 
 ```bash
-CREATE SCHEMA `new_schema` ;
+CREATE SCHEMA `bdd_name` ;
 ```
 
 2. Créer une table à l'intérieur de la base
 
 ```bash
-CREATE TABLE `my_data`.`new_table` (
+CREATE TABLE `bdd_name`.`my_table` (
   `idnew_table` INT NULL);
 ```
 
 3. Supprimer une table :
 
 ```bash
-DROP TABLE `my_data`.`new_table` ;
+DROP TABLE `bdd_name`.`my_table` ;
 ```
 
-Cette commande supprime la table `new_table` de la base de données `my_data`. Assurez-vous de bien vouloir supprimer la table, car cette action est irréversible.
+Cette commande supprime la table `my_table` de la base de données `bdd_name`. Assurez-vous de bien vouloir supprimer la table, car cette action est irréversible.
