@@ -5,7 +5,6 @@ import urllib.parse
 import socketserver
 import collections
 import re
-
 import pymysql
 
 __version__ = "5.12.0"
