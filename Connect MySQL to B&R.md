@@ -41,15 +41,16 @@
 ## Python Connector
 
 1. **Download and integrate the script**:  
-   Download the [`mappDatabaseConnector.py`](mappDatabaseConnector.py) script and add it to your project.
+   Download the [`mappdatabaseconnector_5_24.py`](mappdatabaseconnector_5_24.py) script and add it to your project.
 
-   ![Python script integration](https://github.com/user-attachments/assets/44ad53af-930a-438f-b8ab-b5114234792e)
+   ![Python script integration](https://github.com/user-attachments/assets/136397f2-751c-456a-b7e1-8a8047b9b77c)
+
 
 2. **Run the script**:  
-   Execute the following command or directly click the `.py` file in your project's directory:
+   Execute the following command or directly click the `mappdatabaseconnector_5_24.py` file in your project's directory:
 
    ```bash
-   python mappDatabaseConnector.py 85 127.0.0.1 3306 mysql
+   python mappdatabaseconnector_5_24.py 85 127.0.0.1 3306 mysql
    ```
 
    **Default Arguments**:
