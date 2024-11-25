@@ -46,8 +46,9 @@
    ![Python script integration](https://github.com/user-attachments/assets/136397f2-751c-456a-b7e1-8a8047b9b77c)
 
 
-2. **Run the script**:  
-   Execute the following command or directly click the `mappdatabaseconnector_5_24.py` file in your project's directory:
+2. **Run the script**:
+   > ⚠️ This script need python 3.8 to run correctly
+   - Execute the following command or directly click the `mappdatabaseconnector_5_24.py` file in your project's directory:
 
    ```bash
    python mappdatabaseconnector_5_24.py 85 127.0.0.1 3306 mysql
@@ -95,4 +96,36 @@
      - The `mappDatabase` configuration matches the database settings.
      - Try to disable the firewall
 
-     ![Error troubleshooting](https://github.com/user-attachments/assets/d7e6a951-7430-454f-8882-9ae6bce3dd50)
+     ![Error troubleshooting](https://github.com/user-attachments/assets/d37fcb07-c9ab-434c-beda-ce90de4bfb7f)
+
+## Creating and Executing a Query
+
+### 1. Add the Exact Same Data Structure as the Table
+First, ensure the data structure matches the table's schema to properly interact with the data.
+
+![Data Structure Image 1](https://github.com/user-attachments/assets/a9add353-3927-4018-a61b-00700e2de6cf)
+
+![Data Structure Image 2](https://github.com/user-attachments/assets/19c3df60-e041-49d9-9601-998f08c1ec33)
+
+![Data Structure Image 3](https://github.com/user-attachments/assets/22ceac8e-9de7-422e-a21d-9d311885fb59)
+
+### 2. Configuration of MpDatabaseQuery
+Add the following variable of type `MpDatabaseQuery`:
+
+- `MpDatabaseQuery_0` of type `MpDatabaseQuery`.
+
+Configure the `MpDatabaseQuery` as shown below:
+
+![Data Structure Image 4](https://github.com/user-attachments/assets/c63ea84d-8298-4cad-8d61-951137475f92)
+
+### 3. Create a Cyclic Program
+To ensure the query runs in a loop, insert the `MpDatabaseQuery` function block and configure it as shown below:
+
+![Cyclic Program Configuration](https://github.com/user-attachments/assets/22b26da7-577a-490a-8eba-f7b1443ad39e)
+
+### 4. Deploy to the Controller
+In the Python script, you will see the SQL request being executed:
+
+![SQL Request in Python Script](https://github.com/user-attachments/assets/80bfef3e-d0b4-4880-a75b-c358be406831)
+
+![Controller Deployment Image](https://github.com/user-attachments/assets/87036a5c-b3f7-4740-81d0-5f96eb703821)
