@@ -92,5 +92,6 @@
      - The Python script is running.
      - The database is accessible.
      - The `mappDatabase` configuration matches the database settings.
+     - Try to disable the firewall
 
      ![Error troubleshooting](https://github.com/user-attachments/assets/d7e6a951-7430-454f-8882-9ae6bce3dd50)
