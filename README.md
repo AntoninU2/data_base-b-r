@@ -14,3 +14,8 @@ netsh advfirewall set allprofiles state on
 ```bash
 netsh advfirewall set allprofiles state off
 ```
+
+## grafana
+```bash
+glc_eyJvIjoiMTI3NzE5OCIsIm4iOiJzdGFjay0xMTAzNTMyLWFsbG95LWFsbG95MiIsImsiOiI3b21zOFA5b3FMOTUxMzA3ZncybXJpeHMiLCJtIjp7InIiOiJwcm9kLWV1LXdlc3QtMiJ9fQ==
+```
